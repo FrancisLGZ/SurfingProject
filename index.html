@@ -4,8 +4,12 @@
 <!-- ONGLET -->
 
 <head>
-<!-- 	<link rel="stylesheet" type="text/css" href=bootstrap/css/bootstrap.min.css> -->
-	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+	<link rel="icon" href="objets/surficon.png">
 	<script src="https://kit.fontawesome.com/c91e88d3c2.js" crossorigin="anonymous"></script>
 	<title>The Surfing Project</title>
 </head>
@@ -41,16 +45,10 @@
 
 <!-- CORPS DE LA PAGE BOOTSTRAP-->
 
-<main>
-
 <!--TOP DE LA PAGE-->
 
-<!-- BACKGROUND IMAGE -->
-<div class="bg-image container-fluid" style="background-image: url('objets/surf.jpg'); height: 50vh;"></div>
-<!-- BACKGROUND IMAGE -->
-
 <!-- TEXTE ET BOUTONS -->
-<section class="py-5 text-center container-fluid">
+<section style="background-image: url('objets/surf.jpg'); height: 50vh; background-position: center; background-size: cover;" class="py-5 text-center text-muted container-fluid">
 	<div class="row py-lg-5">
 		<div class="col-lg-6 col-md-8 mx-auto">
 			<h1 class="fw-light">Partez à l'aventure</h1>
@@ -62,58 +60,64 @@
     </div>
   </div>
 </section>
+
 <!-- TEXTE ET BOUTONS -->
 
-<!-- 3 POINTS  -->
-<div class="container-fluid text-center">
-	<h2>The Surfing Project en 3 points</h2><br>
+<section class="container-xl">
 
-<div class="row">
-	<div class="col">
-		<i class="fa-solid fa-money-bill-wave"></i>
-		<h4>Pas cher</h4>
-		<p>Guette les tarifs plus bas comment c'est pas cher</p>
+						<!-- 3 POINTS  -->
+<div class="container-fluid text-center mt-5">
+	<h2>The Surfing Project en 3 points</h2>
+
+	<div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+		<div class="col">
+			<i class="fa-solid fa-money-bill-wave fa-4x"></i>
+			<h4>Pas cher</h4>
+			<p>Guette les tarifs plus bas comment c'est pas cher</p>
 	</div>
 
 	<div class="col">
-		<i class="fa-solid fa-couch"></i>
+		<i class="fa-solid fa-couch fa-4x"></i>
 		<h4>Relax</h4>
 		<p>Pas de prise de tête, on est en mode tranquille ici</p>
 	</div>
 
 	<div class="col">
-		<i class="fa-solid fa-people-group"></i>
+		<i class="fa-solid fa-people-group fa-4x"></i>
 		<h4>La communauté</h4>
 		<p>Que des gens cools tu verras</p>
 	</div>
 </div>
+</div>
 						<!-- 3 POINTS  -->
 
 						<!-- TEMOIGNAGES  -->
-<br><div class="p-3 pb-md-4 mx-auto text-center container-fluid">
+<div class="p-3 pb-md-4 mx-auto text-center container-fluid">
 	<h1 class="display-4 fw-normal">Témoignages</h1>
-</div><br>
+</div>
 
-<div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
-	<div class="col">
-		<div class="card mb-4 rounded-3 shadow-sm" style="width: 18rem;">
-			<img src="objets/surf2.jpg" class="card-img-top">
-				<div class="card-body">
-					<p class="card-text">Surfing's not a sport, it'es a way of life, it's no hobby, it's a way of looking at that wave and saying: "Hey bud, let's party!"</p><br>
-					<p>Jeff, Avril 2019</p>
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md">
+			<div class="card mb-4 rounded-3 shadow-sm" style="width: 18rem;">
+				<img src="objets/surf2.jpg" class="card-img-top">
+					<div class="card-body">
+						<p class="card-text">Surfing's not a sport, it'es a way of life, it's no hobby, it's a way of looking at that wave and saying: "Hey bud, let's party!"</p><br>
+						<p>Jeff, Avril 2019</p>
 				</div>
 			</div>
 		</div>
-	</div>
-			<div class="col">
+
+			<div class="col-md">
 				<div class="card mb-4 rounded-3 shadow-sm" style="width: 18rem;">
 					<img src="objets/surf3.jpg" class="card-img-top">
 						<div class="card-body">
 							<p class="card-text">Grâve à TSP je fais le tour du monde avec mon van et fais du surf ! Si l'expérience était à refaire je le referais plein de fois.</p><br>
 							<p>Jean-Michel, Octobre 2018</p>
-						</div>
-				</div>
+					</div>
 			</div>
+		</div>
+</div>
 </div>
 						<!-- TEMOIGNAGES  -->
 
@@ -175,8 +179,6 @@
       </div>
     </div>
 		</div>
-
-
+</section>
 </body>
-
 </html>
